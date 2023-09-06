@@ -101,6 +101,10 @@ body {
 #gameover {
     font-size: 90px;
 }
+#gamestart{
+    font-size: 90px;
+    color: #6408f8;
+}
 
 #bubble {
     width: 35px;
@@ -170,9 +174,12 @@ body {
         row-gap: 3vw;
         padding-bottom: 1vw;
     }
-    #game-panel h1 {
+    #game-panel #gameover{
         color: red;
         text-align: center;
     }
-
+    #gamestart{
+        text-align: center;
+        color: rgb(71, 37, 174);;
+    }
 }
