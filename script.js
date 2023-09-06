@@ -42,9 +42,25 @@ document.querySelector("#game-panel").addEventListener("click",(dets)=>{
         newHitValue();
     }
 });
+setTimeout(()=>{
+    let t=6;
+    let t1=setInterval(()=>{
+        if(t>0){
+            t--;
+        document.querySelector("#game-panel").innerHTML=`<h1 id="gamestart">Game Starts in ${t} </h1>`;
+    }
+    else{
+        clearInterval(t1);
+        makebubble();
+        newHitValue();
+        runtimer();
+    }
+},1000)
 
-makebubble();
-newHitValue();
-runtimer();
+},);
+
+// makebubble();
+// newHitValue();
+// runtimer();
 
 
